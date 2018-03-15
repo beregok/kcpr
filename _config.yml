@@ -1,8 +1,8 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 10 # it will paginate after this number
-language: 'uk-ua'
+paginate: 12 # it will paginate after this number
+language: 'uk-UA'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
