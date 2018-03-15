@@ -1,0 +1,132 @@
+cpr:
+  username: cpr
+  name: Конотопський ЦПР
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Районний центр позашкільної роботи
+  picture: assets/images/ghost.png
+  facebook: ghost
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+gorban:
+  username: gorban
+  name: Горбань Оксана Віталіївна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Директор конотопського центру позашкільної роботи
+  picture: authors/shef.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/giulia-bertelli-142614-unsplash.jpg
+golub:
+  username: golub
+  name: Голуб Наталія Анатоліївна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Методист Конотопського районного ЦПР
+  picture: authors/golub-na.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/vashishtha-jogi-101218-unsplash.jpg
+dariy:
+  username: dariy
+  name: Дарій Людмила Борисівна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Методист Конотопського районного ЦПР
+  picture: authors/dariylb.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/fables.jpg
+petrenko:
+  username: petrenko
+  name: Петренко Тетяна Олександрівна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Методист Конотопського районного ЦПР
+  picture: authors/petrenko-to.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/snowspring.jpg
+chepurna:
+  username: chepurna
+  name: Чепурна Маргарита Олексіївна
+  location: Україна, Попівка
+  url_full: False
+  url: False
+  bio: Працює з вересня 2007 року керівником гуртків туристсько-краєзнавчого напрямку «Літературно-мистецьке краєзнавство Сумщини» та «Юні музеєзнавці».
+  picture: authors/chepurna.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+vegera:
+  username: vegera
+  name: Вегера Наталія Юрівна
+  location: Україна, Землянка
+  url_full: False
+  url: False
+  bio: Eнергійнa, талановитa, позитивнa та неординарнa особистість
+  picture: authors/vgera.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/summit.jpg
+ruslana:
+  username: ruslana
+  name: Руслана Карпенко
+  location: Україна
+  url_full: False
+  url: False
+  bio: Керівник гуртка «Мистецтвознавство»
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+chashka:
+  username: chashka
+  name: Чашка В.С.
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Kерівник гуртка «Юні друзі природи»
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+zenchenko:
+  username: zenchenko
+  name: Зенченко А.М.
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Керівник гуртка «Музейна справа»
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+fedirko:
+  username: fedirko
+  name: А.Ю.Федірко
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Керівник гуртка «Юні туристи»
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
+beregok:
+  username: beregok
+  name: Бережний Олександр Васильович
+  location: Ukraine, Kozatske
+  url_full: http://beregok.pp.ua/
+  url: False
+  bio: The Teacher
+  picture: authors/beregok.jpg
+  facebook: Z5kNCeiLTbLoTJWS6Pr3XPC4yP8JAFqeBM3RvFL9UWtGUgRiEV
+  twitter: beregok
+  cover: assets/images/writing.jpg

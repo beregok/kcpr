@@ -1,0 +1,32 @@
+news:
+  name: Новини
+  description: Новини
+  cover: assets/images/blog-cover4.jpeg
+lessons:
+  name: Заняття
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+konkurs:
+  name: Конкурс
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+metodorg:
+  name: Методичне об'єднання
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+seminar:
+  name: Семінар
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+teacher:
+  name: Тьютор
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+gurtok:
+  name: Гуртки
+  description: False
+  cover: assets/images/blog-cover4.jpeg
+proekt:
+  name: Проекти
+  description: Проекти ЦПР
+  cover: assets/images/blog-cover4.jpeg
