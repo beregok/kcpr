@@ -119,6 +119,17 @@ fedirko:
   facebook: False
   twitter: False
   cover: assets/images/blog-cover.jpeg
+kirichenko:
+  username: kirichenko
+  name: Кириченко Тетяна Валеріївна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Керівник гуртка "Виготовлення сувенірів"
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
 beregok:
   username: beregok
   name: Бережний Олександр Васильович
