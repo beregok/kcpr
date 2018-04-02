@@ -130,6 +130,17 @@ kirichenko:
   facebook: False
   twitter: False
   cover: assets/images/sweta-meininger-173174-unsplash.jpg
+timochuk:
+  username: timochuk:
+  name: Кириченко Тетяна Валеріївна
+  location: Україна, Тулушка
+  url_full: False
+  url: False
+  bio: Керівник гуртка "Народні ремесла"
+  picture: authors/timachuk2.jpg
+  facebook: False
+  twitter: False
+  cover: assets/images/master.jpg
 beregok:
   username: beregok
   name: Бережний Олександр Васильович
