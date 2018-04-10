@@ -20,7 +20,8 @@ url: "https://kcpr.pp.ua/"
 
 # Social info
 navigation: True # show the navbar links
-subscribers: True # False you need to connect an external service for this to work,
+contasts: True # show contact links
+subscribers: False # False you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
 ## twitter: tryghost # replace by your username

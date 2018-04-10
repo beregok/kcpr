@@ -65,6 +65,20 @@
             </div>
         </div>
     {% endif %}
+    <!-- The big email contact modal content -->
+    {% if site.contasts %}
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                {% if site.logo %}
+                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
+                {% endif %}
+                <h1 class="subscribe-overlay-title">Надіслати повідомлення {{ site.title }}</h1>
+                <p class="subscribe-overlay-description">Наші фахівці завжди з радістю допоможуть і нададуть кваліфіковану консультацію з будь-яких питань. У разі потреби, будь ласка, дзвоніть:</p>
+                {% include contact-form.html placeholder="youremail@example.com" %}
+            </div>
+        </div>
+    {% endif %}
     <!-- highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.12.2/components/prism-abap.min.js"></script>
     <script>$(document).ready(function() {
