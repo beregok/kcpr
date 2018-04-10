@@ -23,6 +23,9 @@
         {% if site.subscribers %}
             <a class="subscribe-button" href="#subscribe">Підписатися</a>
         {% endif %}
-        <a class="subscribe-button" href="{{site.baseurl}}archive">Архів</a>
+        {% if site.contasts %}
+            <a class="subscribe-button" href="#subscribe">Контакт</a>
+        {% endif %}
+        <!-- <a class="subscribe-button" href="{{site.baseurl}}archive">Архів</a> -->
     </div>
 </nav>
