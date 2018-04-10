@@ -84,9 +84,7 @@ exclude:
   - .travis.yml
   - Gemfile
   - Gemfile.lock
-  - GHOST.txt
   - gulpfile.js
-  - LICENSE
   - package.json
   - Rakefile
   - README.md
