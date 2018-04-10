@@ -8,7 +8,10 @@ class: page-template
 subclass: 'post page'
 ---
 
-<form name="contact" method="POST" netlify>
+<form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" netlify>
+    <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
   <p>
     <label>Ваше Ім'я: <input type="text" name="name"></label>   
   </p>
