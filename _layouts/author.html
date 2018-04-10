@@ -10,7 +10,6 @@ logo: 'assets/images/ghost.png'
 ---
 <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
-
 <!-- #author  -->
 <!-- Everything inside the #author tags pulls data from the author -->
 {% for author in site.data.authors %}
@@ -50,15 +49,12 @@ logo: 'assets/images/ghost.png'
     {% endif %}
 {% endfor %}
 <!-- /author -->
-
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
         <div class="post-feed">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {%  include post-card.html %}
         </div>
-
     </div>
 </main>

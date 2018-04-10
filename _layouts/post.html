@@ -6,22 +6,17 @@ disqus: false
 ---
 
 <!-- default -->
-
 <!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template -->
-
 <header class="site-header outer">
     <div class="inner">
         {% include site-nav.html %}
     </div>
 </header>
-
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
-
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
         <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
             <header class="post-full-header">
@@ -45,13 +40,11 @@ into the {body} of the default.hbs template -->
             <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
             </figure>
             {% endif %}
-
             <section class="post-full-content">
                 <div class="kg-card-markdown">
                     {{ content }}
                 </div>
             </section>
-
             <!-- Slider -->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
             <!-- fotorama.css & fotorama.js. -->
@@ -63,7 +56,6 @@ into the {body} of the default.hbs template -->
                 <a href="{{ image.image }}"><img src="{{ image.image }}" alt="{{ template.name }}"></a>
             {% endfor %}
             </div>
-
             <!-- Email subscribe form at the bottom of the page -->
             {% if site.subscribers %}
                 <section class="subscribe-form">
@@ -72,7 +64,6 @@ into the {body} of the default.hbs template -->
                     {% include subscribe-form.html placeholder="youremail@example.com" %}
                 </section>
             {% endif %}
-
             <footer class="post-full-footer">
                 <!-- Everything inside the #author tags pulls data from the author -->
                 <!-- #author-->
@@ -98,7 +89,6 @@ into the {body} of the default.hbs template -->
                 {% endfor %}
                 <!-- /author  -->
             </footer>
-
             <!-- If you use Disqus comments, just uncomment this block.
             The only thing you need to change is "test-apkdzgmqhj" - which
             should be replaced with your own Disqus site-id. -->
@@ -119,12 +109,9 @@ into the {body} of the default.hbs template -->
                     </script>
                 </section>
             {% endif %}
-
         </article>
-
     </div>
 </main>
-
 <!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
     <div class="inner">
@@ -194,14 +181,10 @@ into the {body} of the default.hbs template -->
             {% if page.previous %}
                 {% include post-card-previous.html %}
             {% endif %}
-
         </div>
     </div>
 </aside>
-
 <!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
 {% include floating-header.html %}
-
 <!-- /post -->
-
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
