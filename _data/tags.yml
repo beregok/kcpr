@@ -26,6 +26,10 @@ proekt:
   name: Проекти
   description: Проекти ЦПР
   cover: assets/images/blog-cover4.jpeg
+gurtok:
+  name: Гуртки
+  description: False
+  cover: assets/images/blog-cover4.jpeg
 dekor:
   name: Декоративно-ужитковий
   description: False
