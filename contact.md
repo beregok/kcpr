@@ -18,6 +18,7 @@ subclass: 'post page'
   <p>
     <label>Повідомлення: <textarea name="message"></textarea></label>
   </p>
+  <div data-netlify-recaptcha></div>
   <p>
     <button type="submit">Надіслати</button>
   </p>
