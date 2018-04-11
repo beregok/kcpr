@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: error
 current: contact
 title: Надіслати повідомлення
 navigation: true
