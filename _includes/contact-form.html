@@ -1,9 +1,15 @@
-<form method="post" action="/contasts/" class="">
+<form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" netlify>
+    <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
 
     <div class="form-group">
+        <label>Ваше Ім'я: <input type="text" name="name"></label>
         <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <label>Повідомлення: <textarea name="message"></textarea></label>
     </div>
-    <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Підписатися</span></button>
+    <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
+  <div data-netlify-recaptcha></div>
     <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
 </form>
