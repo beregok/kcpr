@@ -1,13 +1,11 @@
 <form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" netlify>
-    <p class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-  </p>
+    <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
 
     <div class="form-group">
-        <label>Ваше Ім'я: <input type="text" name="name"></label>
+        <input type="text" name="name" placeholder="Ваше Ім'я:" />
         <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
-        <label>Повідомлення: <textarea name="message"></textarea></label>
+        <textarea name="message" laceholder="Повідомлення:" /></textarea>
     </div>
     <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
   <div data-netlify-recaptcha></div>
