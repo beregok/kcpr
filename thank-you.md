@@ -1,7 +1,7 @@
 ---
 layout: page
 current: contact
-title: Контакт
+title: Надіслати повідомлення
 navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
