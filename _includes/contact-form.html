@@ -4,10 +4,9 @@
     <div class="form-group">
     <p><input class="subscribe-email" type="text" name="name"  placeholder="Ваше Ім'я:"></p>
   <p><input class="subscribe-email" type="email" name="email"  placeholder="Ваш Email:"></p>
-  <p><textarea class="subscribe-email" name="message"  placeholder="Повідомлення:"></textarea></p>
+  <p><textarea class="subscribe-email" name="message"  placeholder="Повідомлення:"></textarea></p>     <div class="form-group">
         <div data-netlify-recaptcha></div>
-    <div class="form-group">
-    <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
+        <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
     </div>
 
     <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
