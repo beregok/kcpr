@@ -2,19 +2,19 @@
     <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
     <div class="form-group">
-        <div class="col-md-9">
-        <input type="text" name="name" placeholder="Ваше Ім'я:" />
-        </div>
+    <p>
+    <label>Ваше Ім'я: <input type="text" name="name"></label>
+  </p>
+  <p>
+    <label>Ваш Email: <input type="email" name="email"></label>
+  </p>
+  <p>
+    <label>Повідомлення: <textarea name="message"></textarea></label>
+  </p>
+        <div data-netlify-recaptcha></div>
+    <div class="form-group">
+    <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
     </div>
-    <div class="form-group"><div class="col-md-9">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" /></div>
-    </div>
-    <div class="form-group"><div class="col-md-9">
-        <textarea name="message" laceholder="Повідомлення:" /></textarea></div>
-    </div>
-    <div class="form-group"><div class="col-md-9">
-    <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button></div>
-    </div>
-  <div data-netlify-recaptcha></div>
+
     <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
 </form>
