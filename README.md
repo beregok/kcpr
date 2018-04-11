@@ -4,10 +4,10 @@
 
 Зроблено на основі теми  
 
-## Jasper2
+### Jasper2
 
 This is a full-featured port of Ghost's default theme [Casper](https://github.com/tryghost/casper)
 
-## Live Demo
+#### Live Demo
 
 [Ghost's Casper](https://demo.ghost.io) // [Jasper2](https://jekyller.github.io/jasper2)
