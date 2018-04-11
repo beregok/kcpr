@@ -4,10 +4,16 @@
 
     <div class="form-group">
         <input type="text" name="name" placeholder="Ваше Ім'я:" />
+    </div>
+    <div class="form-group">
         <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <div class="form-group">
         <textarea name="message" laceholder="Повідомлення:" /></textarea>
     </div>
+    <div class="form-group">
     <button class="" type="submit" {% unless site.contasts %}disabled{% endunless %}><span>Надіслати</span></button>
+    </div>
   <div data-netlify-recaptcha></div>
     <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
 </form>
