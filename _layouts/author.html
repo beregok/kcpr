@@ -8,10 +8,7 @@ navigation: True
 label: Author
 logo: 'assets/images/ghost.png'
 ---
-<!-- < default}} -->
-<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
-<!-- #author  -->
-<!-- Everything inside the #author tags pulls data from the author -->
+
 {% for author in site.data.authors %}
     {% if author[1].username == page.author %}
     <header class="site-header outer {% if author[1].cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if author[1].cover %}{{ author[1].cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
@@ -48,12 +45,9 @@ logo: 'assets/images/ghost.png'
     </header>
     {% endif %}
 {% endfor %}
-<!-- /author -->
-<!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
         <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {%  include post-card.html %}
         </div>
     </div>

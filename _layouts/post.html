@@ -5,16 +5,11 @@ class: post-template
 disqus: false
 ---
 
-<!-- default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
 <header class="site-header outer">
     <div class="inner">
         {% include site-nav.html %}
     </div>
 </header>
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
         <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
@@ -35,7 +30,6 @@ into the {body} of the default.hbs template -->
                 </section>
                 <h1 class="post-full-title">{{ page.title }}</h1>
             </header>
-
             {% if page.cover %}
             <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
             </figure>
@@ -45,18 +39,14 @@ into the {body} of the default.hbs template -->
                     {{ content }}
                 </div>
             </section>
-            <!-- Slider -->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <!-- fotorama.css & fotorama.js. -->
             <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-            <!-- 2. Add images to <div class="fotorama"></div>. -->
             <div class="fotorama" data-autoplay="true" data-nav="thumbs" data-allowfullscreen="true">
             {% for image in page.images %}
                 <a href="{{ image.image }}"><img src="{{ image.image }}" alt="{{ template.name }}"></a>
             {% endfor %}
             </div>
-            <!-- Email subscribe form at the bottom of the page -->
             {% if site.subscribers %}
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Підписатися на {{ site.title }}</h3>
@@ -65,8 +55,6 @@ into the {body} of the default.hbs template -->
                 </section>
             {% endif %}
             <footer class="post-full-footer">
-                <!-- Everything inside the #author tags pulls data from the author -->
-                <!-- #author-->
                 {% for author in site.data.authors %}
                     {% if author[1].username == page.author %}
                         <section class="author-card">
@@ -87,11 +75,7 @@ into the {body} of the default.hbs template -->
                         </div>
                     {% endif %}
                 {% endfor %}
-                <!-- /author  -->
             </footer>
-            <!-- If you use Disqus comments, just uncomment this block.
-            The only thing you need to change is "test-apkdzgmqhj" - which
-            should be replaced with your own Disqus site-id. -->
             {% if site.disqus or page.disqus %}
                 <section class="post-full-comments">
                     <div id="disqus_thread"></div>
@@ -112,7 +96,6 @@ into the {body} of the default.hbs template -->
         </article>
     </div>
 </main>
-<!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
     <div class="inner">
         <div class="read-next-feed">
@@ -171,20 +154,13 @@ into the {body} of the default.hbs template -->
                     </article>
                 {% endif %}
             {% endif %}
-
-            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             {% if page.next %}
                 {% include post-card-next.html %}
             {% endif %}
-
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             {% if page.previous %}
                 {% include post-card-previous.html %}
             {% endif %}
         </div>
     </div>
 </aside>
-<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
 {% include floating-header.html %}
-<!-- /post -->
-<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
