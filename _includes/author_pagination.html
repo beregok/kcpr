@@ -1,10 +1,7 @@
 <nav class="pagination" role="pagination">
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a class="newer-posts" href="{{ site.baseurl }}author/{{ page.author }}" title="Previous Page">&laquo; Нові записи</a>
-        {% else %}
-            <a class="newer-posts" href="{{ site.baseurl }}author/{{ page.author }}/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Нові записи</a>
-      {% endif %}
+    {% if paginator.previous_page %}{% if paginator.previous_page == 1 %}
+            <a class="newer-posts" href="{{ site.baseurl }}author/{{ page.author }}" title="Previous Page">&laquo; Нові записи</a>{% else %}
+            <a class="newer-posts" href="{{ site.baseurl }}author/{{ page.author }}/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Нові записи</a>{% endif %}
     {% endif %}
     <span class="page-number"> Сторінка {{ paginator.page }} з {{ paginator.total_pages }} </span>
     {% if paginator.next_page %}
