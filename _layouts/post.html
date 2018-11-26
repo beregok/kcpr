@@ -16,7 +16,7 @@ disqus: false
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{% include date-page-ua.html date=page.date %}</time>
                     {% if page.tags.size > 0 %}
                         <span class="date-divider">/</span>
                         {% for tag in page.tags %}
