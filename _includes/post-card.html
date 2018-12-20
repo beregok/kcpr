@@ -1,10 +1,16 @@
 {% for post in paginator.posts %}
     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
-        {% if post.cover %}
             <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
-                <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
+                <div class="post-card-image {% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %}"></div>
+                <style media="all">
+                  .no-webp .{% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %}{
+                      background-image: url("{% if post.cover %}{{ site.baseurl }}{{ post.cover }}{% endif %}");
+                    }
+                  .webp .{% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %}{
+                      background-image: url("{% if post.cover %}{{ site.baseurl }}{{ post.cover | replace: "jpg", "webp" | replace: "JPG", "webp" }}{% endif %}");
+                    }
+                </style>
             </a>
-        {% endif %}
         <div class="post-card-content">
             <a class="post-card-content-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
                 <header class="post-card-header">

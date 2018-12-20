@@ -39,14 +39,75 @@ disqus: false
                     {{ content }}
                 </div>
             </section>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-            <div class="fotorama" data-autoplay="true" data-nav="thumbs" data-allowfullscreen="true">
-            {% for image in page.images %}
-                <a href="{{ image.image }}"><img src="{{ image.image }}" alt="{{ template.name }}"></a>
-            {% endfor %}
-            </div>
+
+            <script type="text/javascript">
+              $().fancybox({
+                selector : '[data-fancybox="gallery"]',
+                loop     : true
+              });
+            </script>
+
+<div class="container2">
+    <div class="row">
+      <div class="grid">
+          {% for image in page.images %}
+          <div class="grid-item">
+          <a class="grid-link" href="{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
+            <picture>
+              <source srcset="{{ image.image | replace: "jpg", "webp" }}" type="image/webp">
+                <img class="grid-img" src="{{ image.image }}" alt="{{ template.name }}">
+            </picture>
+          </a>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+</div>
+<style media="all">
+  .container2 {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 10px;
+    margin: 0 auto;
+    }
+  .row {
+    margin: 0 -10px;
+  }
+  .grid {
+    margin-bottom: 20px;
+  }
+  .grid-item {
+    width: 100%;
+    padding: 10px;
+  }
+  .grid-item a {
+    display: block;
+  }
+  .grid-item img {
+    display: block;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+  }
+  .grid-item a:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  @media (min-width: 480px) {
+    .grid {
+      display: flex;
+    }
+    .grid-item {
+      width: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    .grid-item {
+      width: 33.33333333333333%;
+    }
+  }
+</style>
             {% if site.subscribers %}
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Підписатися на {{ site.title }}</h3>
@@ -164,3 +225,22 @@ disqus: false
     </div>
 </aside>
 {% include floating-header.html %}
+<!--  Fancybox  -->
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/jquery.fancybox.min.js"></script>
+<!--  Grid Mediafoto  -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript">
+  (function ($) {
+    $(window).on("load", function () {
+      var masonryGrid = $(".grid");
+      masonryGrid.imagesLoaded(function () {
+        masonryGrid.masonry({
+          itemSelector: ".grid-item",
+          percentPosition: true
+        });
+      });
+    });
+  })(jQuery);
+</script>
