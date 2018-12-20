@@ -54,7 +54,7 @@ disqus: false
           <div class="grid-item">
           <a class="grid-link" href="{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
             <picture>
-              <source srcset="{{ image.image | replace: "jpg", "webp" }}" type="image/webp">
+              <source srcset="{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
                 <img class="grid-img" src="{{ image.image }}" alt="{{ template.name }}">
             </picture>
           </a>

@@ -24,7 +24,10 @@
             </a>
             <footer class="post-card-meta">
                 {% for author in site.data.authors %}{% if author[1].username == post.author %}{% if author[1].picture %}
-                        <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />{% endif %}
+                        <picture>
+                          <source srcset="{{ site.baseurl }}{{ author[1].picture | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
+                            <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}">
+                        </picture>{% endif %}
                         <span class="post-card-author"><a href="{{ site.baseurl }}author/{{ post.author }}/">{{ author[1].name }}</a></span>{% endif %}
                 {% endfor %}
             </footer>
