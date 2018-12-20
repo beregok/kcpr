@@ -10,7 +10,10 @@ navigation: True
         <div class="site-header-content">
             <h1 class="site-title">
                 {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                    <picture>
+                      <source srcset="{{ site.baseurl }}{{ site.logo | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
+                        <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                    </picture>
                 {% else %}
                     {{ site.title }}
                 {% endif %}
