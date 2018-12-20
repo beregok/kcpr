@@ -32,15 +32,15 @@ disqus: false
             </header>
             {% if page.cover %}
             <figure class="post-full-image {% if page.cover %}{{ page.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %}">
-              <style media="all">
-                .no-webp .{% if page.cover %}{{ page.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
-                    background-image: url("{% if page.cover %}{{ site.baseurl }}{{ page.cover }}{% endif %}");
-                  }
-                .webp .{% if page.cover %}{{ page.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
-                    background-image: url("{% if page.cover %}{{ site.baseurl }}{{ page.cover | replace: "jpg", "webp" | replace: "JPG", "webp" }}{% endif %}");
-                  }
-              </style>
             </figure>
+            <style media="all">
+              .no-webp .{% if page.cover %}{{ page.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
+                  background-image: url("{% if page.cover %}{{ site.baseurl }}{{ page.cover }}{% endif %}");
+                }
+              .webp .{% if page.cover %}{{ page.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
+                  background-image: url("{% if page.cover %}{{ site.baseurl }}{{ page.cover | replace: "jpg", "webp" | replace: "JPG", "webp" }}{% endif %}");
+                }
+            </style>
             {% endif %}
             <section class="post-full-content">
                 <div class="kg-card-markdown">
