@@ -46,3 +46,7 @@ socgum:
   name: Соціально-гуманітарний
   description: False
   cover: assets/images/blog-cover4.jpeg
+portfolio:
+  name: Портфоліо керівників
+  description: Портфоліо керівників
+  cover: assets/images/blog-cover4.jpeg

@@ -152,3 +152,14 @@ beregok:
   facebook: Z5kNCeiLTbLoTJWS6Pr3XPC4yP8JAFqeBM3RvFL9UWtGUgRiEV
   twitter: beregok
   cover: assets/images/writing.jpg
+moroz:
+  username: moroz
+  name: Морозинськa Алінa Іванівнa
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Керівник гуртка "Образотворче мистецтво"
+  picture: assets/images/ghost.png
+  facebook: ghost
+  twitter: False
+  cover: assets/images/blog-cover.jpeg
