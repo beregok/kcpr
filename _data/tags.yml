@@ -47,6 +47,6 @@ socgum:
   description: False
   cover: assets/images/blog-cover4.jpeg
 portfolio:
-  name: Портфоліо керівників
-  description: Портфоліо керівників
+  name: Портфоліо
+  description: Портфоліо
   cover: assets/images/anete-lusina.jpg
