@@ -25,6 +25,16 @@
 [[headers]]
   for = "*.jpg" # jpg files too
   [headers.values]
+    Cache-Control = "public, max-age=2592000"    
+
+[[headers]]
+  for = "*.JPG" # JPG files too
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.png" # png files too
+  [headers.values]
     Cache-Control = "public, max-age=2592000"
 
 [[headers]]
