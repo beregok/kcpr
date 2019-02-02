@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css" />
     {% include head.html %}
+    <script src="{{ site.baseurl }}assets/js/modernizr-custom.js" charset="utf-8"></script>
 </head>
 <body class="error-template">
     <div class="site-wrapper">
@@ -37,5 +38,9 @@
             </div>
         </aside>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="	crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.min.js"></script>
+    {% include analytics.html %}
+    {% include post-scripts.html %}
 </body>
 </html>
