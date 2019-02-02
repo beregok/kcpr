@@ -35,7 +35,8 @@ disqus_shortname: cpr-pp # replace with your disqus username
 google_analytics: UA-115552277-1 # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:title
+#permalink: /:title
+permalink: pretty
 # permalink: /author/:author
 # permalink: /tag/:tag
 
@@ -103,4 +104,3 @@ exclude:
 # Minify
 #jekyll-minifier:
 #  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-
