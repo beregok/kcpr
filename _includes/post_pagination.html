@@ -5,6 +5,6 @@
     {% endif %}
     <span class="page-number"> Сторінка {{ paginator.page }} з {{ paginator.total_pages }} </span>
     {% if paginator.next_page %}
-        <a class="older-posts nextjsc" href="{{ site.baseurl }}page{{ paginator.next_page }}/" title="Попередні новини">Старіші записи &raquo;</a>
+        <a class="older-posts" href="{{ site.baseurl }}page{{ paginator.next_page }}/" title="Попередні новини">Старіші записи &raquo;</a>
     {% endif %}
 </nav>
