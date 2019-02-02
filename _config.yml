@@ -16,7 +16,7 @@ logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 production_url: https://kcpr.pp.ua/
 #source_url: https://kcpr.pp.ua/
-url: "https://kcpr.pp.ua/"
+url: "https://kcpr.pp.ua"
 
 # Social info
 navigation: True # show the navbar links
