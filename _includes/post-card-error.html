@@ -7,10 +7,10 @@
                   <div class="post-card-image {% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %}"></div>
                   <style media="all">
                     .no-webp .{% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
-                        background-image: url("{% if post.cover %}{{ site.baseurl }}{{ post.cover }}{% endif %}");
+                        background-image: url("{% if post.cover %}{{ site.url }}{{ site.baseurl }}{{ post.cover }}{% endif %}");
                       }
                     .webp .{% if post.cover %}{{ post.cover | replace: "/", "-" | remove: ".jpg" | remove: ".JPG" }}{% endif %} {
-                        background-image: url("{% if post.cover %}{{ site.baseurl }}{{ post.cover | replace: "jpg", "webp" | replace: "JPG", "webp" }}{% endif %}");
+                        background-image: url("{% if post.cover %}{{ site.url }}{{ site.baseurl }}{{ post.cover | replace: "jpg", "webp" | replace: "JPG", "webp" }}{% endif %}");
                       }
                   </style>
                 </a>
