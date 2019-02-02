@@ -80,20 +80,8 @@
             </div>
         </div>
     {% endif %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.12.2/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="	crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.min.js"></script>
-    {% if paginator.total_pages > site.paginate %}
-    <script>
-        var maxPages = parseInt('{{ paginator.total_pages }}');
-    </script>
-    <script src="{{ site.baseurl }}assets/js/infinitescroll.min.js"></script>
-    {% endif %}
     {% include analytics.html %}
     {% if page.class == "post-template" %}
         {% include post-scripts.html %}
