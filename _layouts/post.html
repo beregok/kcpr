@@ -60,10 +60,10 @@ disqus: false
       <div class="grid">
           {% for image in page.images %}
           <div class="grid-item">
-          <a class="grid-link" href="{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
+          <a class="grid-link" href="{{ site.baseurl }}{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
             <picture>
-              <source srcset="{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
-                <img class="grid-img" src="{{ image.image }}" alt="{{ template.name }}">
+              <source srcset="{{ site.baseurl }}{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
+                <img class="grid-img" src="{{ site.baseurl }}{{ image.image }}" alt="{{ template.name }}">
             </picture>
           </a>
           </div>
