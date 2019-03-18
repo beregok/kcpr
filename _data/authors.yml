@@ -6,7 +6,7 @@ cpr:
   url: False
   bio: Районний центр позашкільної роботи
   picture: assets/images/ghost.png
-  facebook: ghost
+  facebook: cpr.hh.ua
   twitter: False
   cover: assets/images/blog-cover.jpeg
 gorban:
@@ -17,7 +17,7 @@ gorban:
   url: False
   bio: Директор конотопського центру позашкільної роботи
   picture: authors/shef.jpg
-  facebook: False
+  facebook: oksana.gorban.10
   twitter: False
   cover: assets/images/giulia-bertelli-142614-unsplash.jpg
 golub:
@@ -39,7 +39,7 @@ dariy:
   url: False
   bio: Методист Конотопського районного ЦПР
   picture: authors/dariylb.jpg
-  facebook: False
+  facebook: ludadariy
   twitter: False
   cover: assets/images/fables.jpg
 petrenko:
@@ -160,6 +160,17 @@ moroz:
   url: False
   bio: Керівник гуртка "Образотворче мистецтво"
   picture: authors/morozav.jpg
-  facebook: ghost
+  facebook: False
+  twitter: False
+  cover: gurtok/yannis-papanastasopoulos.jpg
+dychenko:
+  username: dychenko
+  name: Дяченко Віра Вікторівна
+  location: Україна, Конотоп
+  url_full: False
+  url: False
+  bio: Керівник гуртка "Джура"
+  picture: assets/images/ghost.png
+  facebook: False
   twitter: False
   cover: gurtok/yannis-papanastasopoulos.jpg
