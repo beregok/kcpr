@@ -14,3 +14,5 @@ author: cpr
 Районний освітньо-мистецький проект «Я маю щастя жити на Сумщині!»
 
 <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ftmlv5icb" width="100%" height="768" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+
+Інтерактивний підручник
