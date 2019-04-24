@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: photos/2017-09-28/2017-09-28-1.jpg
 navigation: True
-title: Почесна відзнакою Веста нагороджено Ілляшенко О. І.
+title: Почесна відзнакою Веста нагороджено Ілляшенко О.І.
 date: 2017-09-28 11:00:00
 tags: Портфоліо
 class: post-template
