@@ -45,7 +45,7 @@
                 <span class="reading-time">
                     {% assign words = post.content | strip_html | number_of_words %}
                     {% if words <= words_per_minute %}
-                      Час перегляду менше < 1 хв
+                      Час перегляду < 1 хв
                     {% else %}
                       Прочитаєте за {{ words | divided_by:words_per_minute }} хв
                     {% endif %}
