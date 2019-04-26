@@ -1,9 +1,7 @@
 /* Table of Contents
 /* ------------------------------------------------------------
-
 This is a development CSS file which is built to a minified
 production stylesheet in assets/built/screen.css
-
 1.  Global Styles
 2.  Layout
 3.  Special Templates
@@ -20,7 +18,6 @@ production stylesheet in assets/built/screen.css
 9.  Error Template
 10. Subscribe Overlay
 11. Site Footer
-
 */
 
 
@@ -76,13 +73,11 @@ body {
 }
 
 /* Usage:
-
 <div class="outer">
     <div class="inner">
         Centered content
     </div>
 </div>
-
 */
 
 /* 3. Special Template Styles
@@ -110,7 +105,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkbrown) l(-5%)) no-repeat center center;
+    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -216,11 +211,8 @@ body {
 }
 
 /* Site Nav Hack Explanation (above):
-
 What's happening above it .site-nav-left is set to overflow-x and allow sideways scrolling, so that when there isn't enough space for all nav items (either due to lots of nav items, or a small viewport), you can still scroll side-to-side to reach them.
-
 The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px of padding-bottom and a 40px fixed height parent (.site-nav) hides that entirely. Slightly hacky code. But nice clean end-result.
-
 */
 
 .site-nav-logo {
@@ -471,23 +463,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
 }
 
-.reading-time {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 33px;
-    flex-shrink: 0;
-    margin-left: 20px;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    float: right;
-    margin-top: -4px;
-    color: var(--midgrey);
-}
-
 /* Special Styling for home page grid (below):
-
 The first (most recent) post in the list is styled to be bigger than the others and take over the full width of the grid to give it more emphasis. Wrapped in a media query to make sure this only happens on large viewports / desktop-ish devices.
-
  */
 
 @media (min-width: 795px) {
@@ -756,11 +733,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper
-
 Usage (In Ghost edtior):
-
 ![img](/some/image.jpg#full)
-
 */
 .post-full-content img[src$="#full"] {
     max-width: none;
@@ -769,12 +743,9 @@ Usage (In Ghost edtior):
 
 
 /* Image captions
-
 Usage (In Ghost editor):
-
 ![img](/some/image.jpg)
 <small>Your image caption</small>
-
 */
 .post-full-content img + br + small {
     display: block;
@@ -1925,4 +1896,17 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+.reading-time {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 33px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: -4px;
+    color: var(--midgrey);
 }
