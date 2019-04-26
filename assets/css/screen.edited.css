@@ -5,6 +5,7 @@ This is a development CSS file which is built to a minified
 production stylesheet in assets/built/screen.css
 
 12. Pagination
+13. fancybox
 
 */
 
@@ -116,3 +117,77 @@ production stylesheet in assets/built/screen.css
     box-shadow: #f4f8fb 0 0 0 5px;
 }
 
+figure.highlight,
+.highlight pre,
+.highlight code,
+.highlight table,
+.highlight tbody,
+.highlight tr,
+td.code {
+    border: none;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.highlight table,
+.highlight td pre {
+    padding: 0;
+    margin: 0;
+}
+
+.highlight table td {
+    border: none;
+    margin: none;
+    padding: none;
+}
+
+.highlight table td:first-child,
+.highlight table td:last-child {
+    background: none;
+}
+
+/* 13. fancybox
+/* ---------------------------------------------------------- */
+.container2 {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.row {
+  margin: 0 -10px;
+}
+.grid {
+  margin-bottom: 20px;
+}
+.grid-item {
+  width: 100%;
+  padding: 10px;
+}
+.grid-item a {
+  display: block;
+}
+.grid-item img {
+  display: block;
+  width: 100%;
+  -webkit-filter: grayscale(77%);
+  filter: grayscale(77%);
+  transition: .5s ease-in-out;
+}
+.grid-item a:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+@media (min-width: 480px) {
+  .grid {
+    display: flex;
+  }
+  .grid-item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .grid-item {
+    width: 33.33333333333333%;
+  }
+}

@@ -50,53 +50,7 @@ disqus: false
                     {% endfor %}
                   </div>
                 </div>
-              </div>
-              <style media="all">
-                .container2 {
-                  width: 100%;
-                  max-width: 1120px;
-                  padding: 0 10px;
-                  margin: 0 auto;
-                }
-                .row {
-                  margin: 0 -10px;
-                }
-                .grid {
-                  margin-bottom: 20px;
-                }
-                .grid-item {
-                  width: 100%;
-                  padding: 10px;
-                }
-                .grid-item a {
-                  display: block;
-                }
-                .grid-item img {
-                  display: block;
-                  width: 100%;
-                  -webkit-filter: grayscale(77%);
-                  filter: grayscale(77%);
-                  transition: .5s ease-in-out;
-                }
-                .grid-item a:hover img {
-                  -webkit-filter: grayscale(0%);
-                  filter: grayscale(0%);
-                }
-                @media (min-width: 480px) {
-                  .grid {
-                    display: flex;
-                  }
-                  .grid-item {
-                    width: 50%;
-                  }
-                }
-                @media (min-width: 768px) {
-                  .grid-item {
-                    width: 33.33333333333333%;
-                  }
-                }
-              </style>
-
+              </div>              
 
             {% if site.disqus or page.disqus %}
                 <section class="post-full-comments">

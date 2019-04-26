@@ -55,67 +55,23 @@ disqus: false
               });
             </script>
 
-<div class="container2">
-    <div class="row">
-      <div class="grid">
-          {% for image in page.images %}
-          <div class="grid-item">
-          <a class="grid-link" href="{{ site.baseurl }}{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
-            <picture>
-              <source srcset="{{ site.baseurl }}{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
-                <img class="grid-img" src="{{ site.baseurl }}{{ image.image }}" alt="{{ template.name }}">
-            </picture>
-          </a>
-          </div>
-          {% endfor %}
-      </div>
-    </div>
-</div>
-<style media="all">
-  .container2 {
-    width: 100%;
-    max-width: 1120px;
-    padding: 0 10px;
-    margin: 0 auto;
-    }
-  .row {
-    margin: 0 -10px;
-  }
-  .grid {
-    margin-bottom: 20px;
-  }
-  .grid-item {
-    width: 100%;
-    padding: 10px;
-  }
-  .grid-item a {
-    display: block;
-  }
-  .grid-item img {
-    display: block;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: .5s ease-in-out;
-  }
-  .grid-item a:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
-  @media (min-width: 480px) {
-    .grid {
-      display: flex;
-    }
-    .grid-item {
-      width: 50%;
-    }
-  }
-  @media (min-width: 768px) {
-    .grid-item {
-      width: 33.33333333333333%;
-    }
-  }
-</style>
+            <div class="container2">
+              <div class="row">
+                <div class="grid">
+                  {% for image in page.images %}
+                  <div class="grid-item">
+                    <a class="grid-link" href="{{ site.baseurl }}{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
+                      <picture>
+                        <source srcset="{{ site.baseurl }}{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
+                          <img class="grid-img" src="{{ site.baseurl }}{{ image.image }}" alt="{{ template.name }}">
+                        </picture>
+                      </a>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+
             {% if site.subscribers %}
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Підписатися на {{ site.title }}</h3>
