@@ -23,10 +23,11 @@ disqus: false
     </section>
     <div class="inner">
         <article class="post-full {{ page.subclass }} no-image">
+          {% if page.images %}
             <header class="post-full-header">
                 <h1 class="post-full-title">Фотознімки</h1>
             </header>
-
+          {% endif %}
             <script type="text/javascript">
               $().fancybox({
                 selector : '[data-fancybox="gallery"]',
@@ -73,8 +74,8 @@ disqus: false
                 .grid-item img {
                   display: block;
                   width: 100%;
-                  -webkit-filter: grayscale(100%);
-                  filter: grayscale(100%);
+                  -webkit-filter: grayscale(77%);
+                  filter: grayscale(77%);
                   transition: .5s ease-in-out;
                 }
                 .grid-item a:hover img {
