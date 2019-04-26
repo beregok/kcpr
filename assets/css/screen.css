@@ -105,7 +105,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: color(var(--darkbrown) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
