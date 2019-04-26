@@ -36,5 +36,3 @@ author: cpr
 <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ftmlv5icb" width="100%" height="768" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
 
 Інтерактивний підручник
-
-# Галерея виробів
