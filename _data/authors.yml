@@ -1,6 +1,7 @@
 cpr:
   username: cpr
   name: Конотопський ЦПР
+  shortname: Конотопський ЦПР
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -12,6 +13,7 @@ cpr:
 gorban:
   username: gorban
   name: Горбань Оксана Віталіївна
+  shortname: Горбань О.В.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -23,6 +25,7 @@ gorban:
 golub:
   username: golub
   name: Голуб Наталія Анатоліївна
+  shortname: Голуб Н.А.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -34,6 +37,7 @@ golub:
 dariy:
   username: dariy
   name: Дарій Людмила Борисівна
+  shortname: Дарій Л.Б.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -45,6 +49,7 @@ dariy:
 petrenko:
   username: petrenko
   name: Петренко Тетяна Олександрівна
+  shortname: Петренко Т.O.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -56,6 +61,7 @@ petrenko:
 chepurna:
   username: chepurna
   name: Чепурна Маргарита Олексіївна
+  shortname: Горбань О.В.
   location: Україна, Попівка
   url_full: False
   url: False
@@ -67,6 +73,7 @@ chepurna:
 vegera:
   username: vegera
   name: Вегера Наталія Юрівна
+  shortname: Вегера Н.Ю.
   location: Україна, Землянка
   url_full: False
   url: False
@@ -78,6 +85,7 @@ vegera:
 ruslana:
   username: ruslana
   name: Руслана Карпенко
+  shortname: Р. Карпенко
   location: Україна
   url_full: False
   url: False
@@ -89,6 +97,7 @@ ruslana:
 chashka:
   username: chashka
   name: Чашка В.С.
+  shortname: Чашка В.С.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -100,6 +109,7 @@ chashka:
 zenchenko:
   username: zenchenko
   name: Зенченко А.М.
+  shortname: Зенченко А.М.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -111,6 +121,7 @@ zenchenko:
 fedirko:
   username: fedirko
   name: А.Ю.Федірко
+  shortname: А.Ю.Федірко
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -122,6 +133,7 @@ fedirko:
 kirichenko:
   username: kirichenko
   name: Кириченко Тетяна Валеріївна
+  shortname: Кириченко Т.В.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -133,6 +145,7 @@ kirichenko:
 timochuk:
   username: timochuk
   name: Тимащук Олег Васильович
+  shortname: Тимащук О.В.
   location: Україна, Тулушка
   url_full: False
   url: False
@@ -144,6 +157,7 @@ timochuk:
 beregok:
   username: beregok
   name: Бережний Олександр Васильович
+  shortname: Бережний О.В.
   location: Ukraine, Kozatske
   url_full: http://beregok.pp.ua/
   url: False
@@ -155,6 +169,7 @@ beregok:
 moroz:
   username: moroz
   name: Морозинськa Алінa Іванівнa
+  shortname: Морозинськa А.І.
   location: Україна, Конотоп
   url_full: False
   url: False
@@ -166,6 +181,7 @@ moroz:
 dychenko:
   username: dychenko
   name: Дяченко Віра Вікторівна
+  shortname: Дяченко В.В.
   location: Україна, Конотоп
   url_full: False
   url: False

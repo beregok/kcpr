@@ -36,7 +36,7 @@
                           <source srcset="{{ site.baseurl }}{{ author[1].picture | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
                             <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}">
                         </picture>{% endif %}
-                        <span class="post-card-author"><a href="{{ site.baseurl }}author/{{ post.author }}/">{{ author[1].name }}</a></span>{% endif %}
+                        <span class="post-card-author"><a href="{{ site.baseurl }}author/{{ post.author }}/">{{ author[1].shortname }}</a></span>{% endif %}
                 {% endfor %}
                 <span class="reading-time">
                     {% assign words = post.content | strip_html | number_of_words %}
