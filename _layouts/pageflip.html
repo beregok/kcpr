@@ -21,81 +21,99 @@ disqus: false
     <section>
         {{ content }}
     </section>
-
     <div class="inner">
-        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+        <article class="post-full {{ page.subclass }} no-image">
             <header class="post-full-header">
                 <h1 class="post-full-title">Фотознімки</h1>
             </header>
-            <section class="post-full-content">
-              <script type="text/javascript">
-                $().fancybox({
-                  selector : '[data-fancybox="gallery"]',
-                  loop     : true
-                });
-              </script>
-              <div class="container2">
+
+            <script type="text/javascript">
+              $().fancybox({
+                selector : '[data-fancybox="gallery"]',
+                loop     : true
+              });
+            </script>
+
+            <div class="container2">
               <div class="row">
-              <div class="grid">
-                {% for image in page.images %}
-                <div class="grid-item">
-                <a class="grid-link" href="{{ site.baseurl }}{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
-                  <picture>
-                    <source srcset="{{ site.baseurl }}{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
-                      <img class="grid-img" src="{{ site.baseurl }}{{ image.image }}" alt="{{ template.name }}">
-                  </picture>
-                </a>
+                <div class="grid">
+                  {% for image in page.images %}
+                  <div class="grid-item">
+                    <a class="grid-link" href="{{ site.baseurl }}{{ image.image }}" data-fancybox="gallery" data-caption="{{ template.name }}">
+                      <picture>
+                        <source srcset="{{ site.baseurl }}{{ image.image | replace: "jpg", "webp" | replace: "JPG", "webp" }}" type="image/webp">
+                          <img class="grid-img" src="{{ site.baseurl }}{{ image.image }}" alt="{{ template.name }}">
+                        </picture>
+                      </a>
+                    </div>
+                    {% endfor %}
+                  </div>
                 </div>
-                {% endfor %}
-              </div>
-              </div>
               </div>
               <style media="all">
-              .container2 {
-              width: 100%;
-              max-width: 1120px;
-              padding: 0 10px;
-              margin: 0 auto;
-              }
-              .row {
-              margin: 0 -10px;
-              }
-              .grid {
-              margin-bottom: 20px;
-              }
-              .grid-item {
-              width: 100%;
-              padding: 10px;
-              }
-              .grid-item a {
-              display: block;
-              }
-              .grid-item img {
-              display: block;
-              width: 100%;
-              -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
-              transition: .5s ease-in-out;
-              }
-              .grid-item a:hover img {
-              -webkit-filter: grayscale(0%);
-              filter: grayscale(0%);
-              }
-              @media (min-width: 480px) {
-              .grid {
-              display: flex;
-              }
-              .grid-item {
-              width: 50%;
-              }
-              }
-              @media (min-width: 768px) {
-              .grid-item {
-              width: 33.33333333333333%;
-              }
-              }
+                .container2 {
+                  width: 100%;
+                  max-width: 1120px;
+                  padding: 0 10px;
+                  margin: 0 auto;
+                }
+                .row {
+                  margin: 0 -10px;
+                }
+                .grid {
+                  margin-bottom: 20px;
+                }
+                .grid-item {
+                  width: 100%;
+                  padding: 10px;
+                }
+                .grid-item a {
+                  display: block;
+                }
+                .grid-item img {
+                  display: block;
+                  width: 100%;
+                  -webkit-filter: grayscale(100%);
+                  filter: grayscale(100%);
+                  transition: .5s ease-in-out;
+                }
+                .grid-item a:hover img {
+                  -webkit-filter: grayscale(0%);
+                  filter: grayscale(0%);
+                }
+                @media (min-width: 480px) {
+                  .grid {
+                    display: flex;
+                  }
+                  .grid-item {
+                    width: 50%;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .grid-item {
+                    width: 33.33333333333333%;
+                  }
+                }
               </style>
-            </section>
+
+
+            {% if site.disqus or page.disqus %}
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = '{{ site.url }}{{ site.baseurl }}';
+                            this.page.identifier = '{{ site.title }}';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            {% endif %}
         </article>
     </div>
 
@@ -119,5 +137,4 @@ disqus: false
     });
   })(jQuery);
 </script>
-
 {% include page-scripts.html %}
