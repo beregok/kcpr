@@ -190,3 +190,15 @@ dychenko:
   facebook: False
   twitter: False
   cover: assets/images/ghost.png
+sohan:
+  username: sohan
+  name: Сохань Олена Олексіївна
+  shortname: Дяченко В.В.
+  location: Україна, Бочечки
+  url_full: False
+  url: False
+  bio: Керівник гуртка "Креативне рукоділля"
+  picture: assets/images/ghost.png
+  facebook: False
+  twitter: False
+  cover: assets/images/ghost.png
