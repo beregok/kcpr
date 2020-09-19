@@ -29,7 +29,7 @@ subscribers: False # False you need to connect an external service for this to w
 facebook: cpr.hh.ua # replace by your username
 
 # Disqus
-disqus: True
+disqus: False
 disqus_shortname: cpr-pp # replace with your disqus username
 
 # Google Analytics
